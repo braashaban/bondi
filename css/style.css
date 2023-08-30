@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+    background-color: #19283f;
+  padding: 0 10px;
+   
+}
+ a.active{
+    color: #33d1cc;
+}
+.nav-link:hover{
+    color: #33d1cc9f;
+    border-bottom: 1px solid wheat;
+}
+
+.navbar .navbar-toggler {
+    color: white;
+    font-size: 25px;
+    border-color: white;
+    background-color: antiquewhite;
+}
+@media (max-width:900px){
+    .navbar .btn-log, .search{
+        display: none;
+    }
+   
+}
+    .btn-log{
+        background-color: #ff3150;
+        color: #ffc400;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 25px;
+        font-weight: 500;
+    }
+
+.search{
+    color: #33d1cc;;
+    font-size: 20px;
+    padding: 10px;
+}
+.hero{
+    background-color: #19283f;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+}
+.featurs{
+  
+    margin-top: 50px;
+}
+ .main-title{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+position: relative;
+}
+.main-title:after{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background-color: #33d1cc;
+    bottom: -20%;
+   
+}
+/* strat feat */
+.content{
+    transition: 1.5s all ;
+    border-radius: 10px;
+}
+.content .icons{
+height: 200px;
+}
+.content .icons svg{
+   left: 50%; 
+   transform: translateX(-50%);
+}
+.content .icons  .number{
+font-size: 12rem;
+color: #dddddd;
+}
+.content .icons   .icon{
+    color: #33d1cc;
+    font-size: 50px;
+}
+.content h2{
+    color: #ffc400;
+}
+.content  p{
+color: #19283f;
+}
+.content:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+
+/* start portfolio */
+.portfolio{
+    margin-top: 80px;
+}
+.portfolio .main-title{
+    margin-bottom: 50px;
+}
+.portfolio ul{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap:wrap ;
+
+margin-top:50px;
+}
+.portfolio ul li{
+    padding: 15px;
+    color: #19283f;
+    font-size: 20px;
+}
+.portfolio ul li:hover{
+    color: #ff3150;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: 5px solid #33d1cc;
+    transition: 1.5s all ;
+}
+
+.img-fluid:hover{
+    transform: translateY(-10px);
+    transform: scale(1.1);
+}
+.about .img-fluid{
+    max-width: 100%;
+    height: auto;
+border: none;
+    transition: 1.5s all ; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.team{
+
+    background-color: #ddd;
+    padding-top: 25px;
+}
+.team .head{
+    text-align: center;
+
+}
+.team .head h2{
+    color: #ffc400;
+    font-weight: 800;
+}
+.card{
+transition: 1.5s all;
+}
+.card:hover{
+transform: translateY(-10px);
+transform: scale(1.1);
+}
+.card-title {
+    background-color: #33d1cc;
+    padding: 10px;
+    color: aliceblue;
+}
+.project{
+    background-color: #19283f;
+margin-bottom: 30px;
+    color: antiquewhite;
+    padding: 20px;
+}
+.project .container{
+padding-top: 30px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.blog{
+    margin-top: 20px;
+}
+.blog .card-title{
+    background-color:white;
+    color: #dddddd;
+}
+.blog .card-text{
+    font-size: 22px;
+    color: #19283f;
+font-weight: 500;
+}
+.contact{
+    background-color: #ffc400;
+    padding: 20px;
+    outline: none;
+    color: black;
+    margin-top: 20px;
+}
+.contact input{
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+}
+.contact input::placeholder{
+    font-size: 20px ;
+    color: #fff;
+}
+.contact .btn{
+    background-color:hsl(216, 43%, 17%);
+    color: #ffc400;
+    cursor: pointer;
+    padding: 10px;
+
+}
+footer{
+    background-color: #19283f;
+    color: #dddddd;
+    padding-top: 20px;
+}
+footer .links{
+display: flex;
+flex-direction: column;
+
+}
+footer .links a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+footer .foot-btn{
+    width: 100%;
+    background-color: #ff3150;
+color: #ffc400;
+border-radius: 10px;
+padding: 15px ;
+cursor: pointer;
+border: none;
+}
+
+footer .icons{
+    display: flex;
+    gap: 15px;
+    padding-top: 20px;
+}
+footer .icons a {
+color: aliceblue;
+font-size: 20px;
+padding-top: 20px;
+}
